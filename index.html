@@ -377,27 +377,6 @@
             margin-left: 10px;
             vertical-align: middle;
         }
-        
-        /* Alternative image styling in case image doesn't work */
-        .profile-img-container {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .profile-fallback {
-            display: none;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #00c3ff, #ff4e50);
-            color: white;
-            font-size: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 4px solid #fff;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
     </style>
 </head>
 <body>
@@ -409,10 +388,7 @@
     <header>
         <div class="profile-img-container">
             <!-- Using your ImgBB link -->
-            <img src="https://i.ibb.co/jkJkCv16/1000195707.jpg" alt="Aobakwe Notwane" class="profile-img" onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
-            <div id="profileFallback" class="profile-fallback">
-                <span>AN</span>
-            </div>
+            <img src="https://i.ibb.co/jkJkCv16/1000195707.jpg" alt="Aobakwe Notwane" class="profile-img">
         </div>
         <h1>Aobakwe Notwane</h1>
         <p>Fullstack Developer & Virtual Assistant | BBA Student in AI at Nexford University</p>
@@ -574,17 +550,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-        
-        // Check if profile image loaded successfully
-        window.addEventListener('load', function() {
-            const profileImg = document.querySelector('.profile-img');
-            const profileFallback = document.getElementById('profileFallback');
-            
-            if (profileImg && profileImg.naturalHeight === 0) {
-                profileImg.style.display = 'none';
-                profileFallback.style.display = 'flex';
-            }
         });
     </script>
 </body>

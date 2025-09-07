@@ -241,7 +241,7 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-      
+        
         /* Contact info */
         .contact-info {
             margin-top: 30px;
@@ -365,6 +365,18 @@
             background: rgba(0, 0, 0, 0.8);
             transform: translateY(-5px);
         }
+        
+        /* Badge for live project */
+        .live-badge {
+            display: inline-block;
+            background: #ff4e50;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -374,7 +386,7 @@
     </div>
 
     <header>
-        <img src="https://drive.google.com/uc?export=download&id=1qL-d0s60g2PxkEPHRTtdETg1BsSIOrkG" alt="Aobakwe Notwane" class="profile-img">
+        <img src="https://i.ibb.co/0Q8R4y7/1000195707.jpg" alt="Aobakwe Notwane" class="profile-img">
         <h1>Aobakwe Notwane</h1>
         <p>Fullstack Developer & Virtual Assistant | BBA Student in AI at Nexford University</p>
     </header>
@@ -407,8 +419,9 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="project">
-            <h3>Project 1: Personal Portfolio Website</h3>
+            <h3>Project 1: Personal Portfolio Website <span class="live-badge">Live</span></h3>
             <p>A responsive website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            <p>View live: <a href="https://aobakwe-01.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> https://aobakwe-01.github.io</a></p>
         </div>
         <div class="project">
             <h3>Project 2: Virtual Assistance Tasks</h3>
@@ -537,4 +550,4 @@
         });
     </script>
 </body>
-  </html> 
+    </html>

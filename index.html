@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aobakwe Notwane - Portfolio</title>
+    <title>Aobakwe Notwane · Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base styles */
+        /* Base styles (preserved from original, with minor refinements) */
         * {
             margin: 0;
             padding: 0;
@@ -87,6 +87,7 @@
             display: flex;
             justify-content: center;
             padding: 15px 30px;
+            flex-wrap: wrap;
         }
         
         nav a {
@@ -102,11 +103,6 @@
         nav a:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
-        }
-        
-        /* Sections */
-        section {
-            margin-top: 30px;
         }
         
         /* Profile image */
@@ -307,10 +303,6 @@
                 font-size: 1.8rem;
             }
             
-            nav {
-                flex-wrap: wrap;
-            }
-            
             nav a {
                 margin: 5px;
                 padding: 10px 15px;
@@ -387,7 +379,7 @@
 
     <header>
         <div class="profile-img-container">
-            <!-- Using your ImgBB link -->
+            <!-- ImgBB link preserved -->
             <img src="https://i.ibb.co/jkJkCv16/1000195707.jpg" alt="Aobakwe Notwane" class="profile-img">
         </div>
         <h1>Aobakwe Notwane</h1>
@@ -418,18 +410,29 @@
         <p><i class="fas fa-graduation-cap"></i> BBA in Business Administration with specialization in AI, Nexford University</p>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section (UPDATED with Mental Space project) -->
     <section id="portfolio">
         <h2>Portfolio</h2>
+        
+        <!-- EXISTING PROJECT 1 (Personal Portfolio) -->
         <div class="project">
             <h3>Project 1: Personal Portfolio Website <span class="live-badge">Live</span></h3>
             <p>A responsive website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
-            <p>View live: <a href="https://aobakwe-01.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> https://aobakwe-01.github.io</a></p>
+            <p>View live: <a href="https://aobakwe-01.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> aobakwe-01.github.io</a></p>
         </div>
+        
+        <!-- EXISTING PROJECT 2 (Virtual Assistance itinerary) -->
         <div class="project">
             <h3>Project 2: Virtual Assistance Tasks</h3>
             <p>Provided virtual assistance for scheduling, email management, and data entry for clients.</p>
             <p>View the itinerary I made: <a href="https://www.canva.com/design/DAGMyeFt2xs/LjabTKcl4XxoFJXNEAwpug/edit" target="_blank"><i class="fas fa-external-link-alt"></i> Canva Itinerary</a></p>
+        </div>
+
+        <!-- NEW PROJECT: Mental Space Webapp (added as requested) -->
+        <div class="project">
+            <h3>Mental Space — positivity & wellness app <span class="live-badge">Live</span></h3>
+            <p>A webapp designed to help people improve their mental health through daily activities, exercises, and positivity boosts. Users can engage with simple yet effective tools to feel more positive about themselves.</p>
+            <p>Explore the app: <a href="https://resilient-alpaca-f56af0.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i> resilient-alpaca-f56af0.netlify.app</a></p>
         </div>
     </section>
 
@@ -553,4 +556,4 @@
         });
     </script>
 </body>
-    </html>
+</html>
